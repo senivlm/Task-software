@@ -40,8 +40,8 @@ namespace Task_2_software
 
 
             return Name == product.Name 
-                || Price == product.Price
-                || Weight == product.Weight;
+                && Price == product.Price
+                && Weight == product.Weight;
         }
         public override string ToString()
         {

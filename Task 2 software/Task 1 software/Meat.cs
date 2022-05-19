@@ -42,7 +42,7 @@ namespace Task_2_software
             if (dairyProduct == null)
                 return false;
 
-            return Category == dairyProduct.Category || TypeOfMeet == dairyProduct.TypeOfMeet;
+            return Category == dairyProduct.Category && TypeOfMeet == dairyProduct.TypeOfMeet;
         }
     }
     public enum Category

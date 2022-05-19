@@ -38,7 +38,7 @@ namespace Task_2_software
             if (dairyProduct == null)
                 return false;
 
-            return DateOfManufacture == dairyProduct.DateOfManufacture || OutOFDate == dairyProduct.OutOFDate;
+            return DateOfManufacture == dairyProduct.DateOfManufacture && OutOFDate == dairyProduct.OutOFDate;
         }
     }
 }

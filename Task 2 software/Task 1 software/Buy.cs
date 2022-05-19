@@ -42,7 +42,7 @@ namespace Task_2_software
             if (!Product.Equals(buy.Product))
                 return false;
 
-            return ProductCount == buy.ProductCount || TotalPrice == buy.TotalPrice || TotalWeight == buy.TotalWeight;
+            return ProductCount == buy.ProductCount && TotalPrice == buy.TotalPrice && TotalWeight == buy.TotalWeight;
 
         }
     }
