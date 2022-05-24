@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Task_2_software
 {
     class Storage
-    {
+    {//Порушення інкапсуляції
         public List<Product> Products { get; set; }
         public Storage()
         {
@@ -18,7 +18,7 @@ namespace Task_2_software
             };
         }
         public Product this[int index]
-        {
+        {//Неконтрольований індекс
             get => Products[index];
             set => Products[index] = value;
         }
@@ -33,6 +33,7 @@ namespace Task_2_software
                 Console.WriteLine($"{product}");
             }        
         }
+        //Круто. Дайте словесне пояснення щодо застосування ofType
         public IEnumerable<Meat> GetMeats()
         {
             var meats = Products.OfType<Meat>();
