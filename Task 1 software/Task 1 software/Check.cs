@@ -13,6 +13,7 @@ namespace Task_1_software
             foreach (var buy in buys)
             {
                 if (!IsValid(buy))
+                    //Треба без continue
                     continue;
 
                 ShowProduct(buy);
@@ -29,6 +30,7 @@ namespace Task_1_software
                 $"Total price: {buy.TotalPrice}\n" +
                 $"Total weight: {buy.TotalWeight}");
         }
+        // хороша ідея
         private static bool IsValid(Buy buy)
         {
             var result = true;
